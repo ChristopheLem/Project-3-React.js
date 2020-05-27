@@ -1,0 +1,506 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    text-align: center;   
+    background-color: #FFF; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin: 40px auto;
+    box-shadow: 7px 7px 5px #F2F2F2, -7px -7px 5px #F2F2F2;
+    min-height: 400px;
+    max-width: 300px;    
+}
+.container img {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h2 {
+    margin-top: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu {
+    font-size: 32px;
+    margin-top: 12px;
+}
+/* HEADER */
+header {
+    background-color: #579C87;
+    border-bottom: 2px solid #A1C181;
+    margin-bottom: 40px;    
+}
+header h1  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #FDCB46;
+    margin: 0;
+    padding: 24px 12px;
+    letter-spacing: -2px;
+}
+
+/* MENU1 */
+#menu1 {
+    background-color: #FCDFDB;
+}
+#menu1 h2 {
+    color: #3C1218;
+    font-weight: 300;
+    font-family: 'Devonshire', cursive;        
+}
+#menu1 p.menu {
+    font-family: 'Kalam', cursive;
+    color: #3C1218;
+}
+
+/* MENU2 */
+#menu2 {
+    background-color: #FFF5FE;
+}
+#menu2 h2 {
+    background: linear-gradient(to right, #DC8527, #9860E7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#menu2 p.menu  {
+    font-family: 'Roboto Slab', serif;      
+    color: #DC8527;
+}
+
+/* MENU3 */
+#menu3 {
+    background-color: #EDEFEE;
+    font-family: 'Kalam', cursive;
+}
+
+#menu3 h2 {
+    background: linear-gradient(to right, #0526BF,#1371E5,#3198E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Dancing Script', cursive;  
+}
+
+#menu3 p.menu  {
+    color: #3198E5;
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+}
+/* MENU4 */
+#menu4 {
+    background-color: #FDFFFD;
+    font-weight: 400;
+}
+
+#menu4 h2 {
+    background: linear-gradient(to right, #4EA043, #92D968, #BEFF7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;  
+}
+
+#menu4 p.menu {
+    font-family: 'Kalam', cursive;      
+    color: #72BF56;
+    font-weight: 300;
+}
+
+/* SOON */
+#soon {
+    display: inline-block;
+    position: relative;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #FDCB46;
+    background-color: #579C87;
+    margin-bottom: 93px;
+}
+#soon h2 {
+    font-size: 24px;
+    margin: 0;
+    color: inherit;
+}
+#soon h2 span {
+    visibility: hidden;;
+}
+#soon h2 span::before {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    animation: dotted_line 1.5s infinite;
+}
+
+@keyframes dotted_line {
+    0% { content: ""; }
+    25% { content: "."; }
+    50% { content: ".."; }
+    75% { content: "..."; }
+    100% { content: ""; }
+}
+
+/* FOOTER */
+footer {
+    background-color: #579C87;
+    border-top: 2px solid #A1C181;
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    font-family: 'Montserrat', sans-serif;
+    color: #FDCB46;
+    font-size: 18px;
+    margin: 0;
+    padding: 16px 12px;
+    animation: shake 0.6s linear 2s 5; 
+    list-style-type: none; 
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes shake {
+    20% { transform: translate(1px, 1px) rotate(2deg); }
+    40% { transform: translate(-1px, -1px) rotate(-2deg); }
+    60% { transform: translate(1px, 1px) rotate(-2deg); }
+    80% { transform: translate(-1px, -1px) rotate(2deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+/* MENU LA NOTE*/
+#lanote {
+    font-family: 'Kalam', cursive;
+    background-color: #FCDFDB;
+    color: #3C1218;
+    margin: 0 auto 104px;
+}
+#lanote h2 {
+    display: block;
+    font-family: 'Devonshire', cursive;   
+    margin-top: 0;
+}
+#lanote h3 {
+    position: relative;
+}
+#lanote .price {
+    font-weight: 700;
+}
+.container .last-title {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Devonshire', cursive;   
+}
+#lanote .last-title img {
+    margin-right: 5px;
+}
+/* MENU LA PALETTE*/
+#lechic {
+    background-color: #FFF5FE;
+    font-family: 'Roboto Slab', serif;  
+    margin: 0 auto 104px;
+}
+#lechic article.starter {
+    color: #C67412;    
+}
+#lechic article.main_course {
+    color: #A56799;
+}
+#lechic article.dessert {
+    color: #6E4CCC;
+}
+#lechic h2 {
+    background: linear-gradient(to right, #CC7C53,#A56799, #9860E7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* MENU LE DELICE*/
+#ledelice {
+    background-color: #EDEFEE;
+    font-family: 'Kalam', cursive;
+    color: #000;
+    margin: 0 auto 104px;
+}
+
+#ledelice h2 {
+    background: linear-gradient(to right, #0526BF,#1371E5,#3198E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Dancing Script', cursive;    
+}
+#ledelice h3 {
+    font-weight: 500;
+    position: relative;
+}
+/* MENU LA PALETTE*/
+#lapalette {
+    background-color: #FDFFFD;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    color: #000;
+    margin: 0 auto 104px;
+}
+#lapalette h2:first-of-type {
+    background: linear-gradient(to right, #4EA043, #92D968, #BEFF7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;   
+}
+#lapalette h3 {
+    font-weight: 500;
+    position: relative
+}
+/* DESKTOP*/
+@media all and (min-width: 768px) {
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        margin: 0 40px 40px;
+    }
+    main .center section:not(#soon) {
+        flex: 0 1 33%;
+    }
+    main .center section:not(#soon) h1:hover {
+        cursor: pointer;
+    }    
+    /* EFFET ZOOM */
+    main .center section:not(#soon) img,
+    main .center section:not(#soon) h2, 
+    main .center section:not(#soon) p {
+        transition: transform 1s, opacity 1s;
+        z-index: 3;
+    }
+    main .center section:not(#soon):hover img,
+    main .center section:not(#soon):hover h2,
+    main .center section:not(#soon):hover p  {
+        transform: scale(1.3);
+        opacity: 0.8;
+    }
+    /* LA NOTE */
+    #lanote.container{
+        max-width: 660px;
+        padding: 40px 80px;
+    }
+    #lanote div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #lanote p {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    #lanote .price {
+        margin-right: 0;
+    }
+    /* SIDELINE */
+    #lanote h3::before {
+        content: url("../images/menu1_left.png");
+        position: absolute;
+        left: -5px;
+        top: 3px;
+    }
+    #lanote h3::after {
+        content: url("../images/menu1_right.png");
+        position: absolute;
+        right: -5px;
+        top: 3px;
+    }
+    /* UNDERLINE WHEN MOUSE HOVER */
+    #lanote h3 span::before {
+        background-color: #3C1218;
+    }
+    /* MENU LA PALETTE */
+    #lechic.container{
+        max-width: 730px;
+    }
+    #lechic h3{
+        position: relative;
+    }
+    #lechic div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #lechic div p {
+        margin-left: 60px;
+    }
+    #lechic .price {
+        margin-right: 60px;
+    }
+    /* SIDELINE */
+    #lechic h3.starter::before {
+        content: url("../images/menu2_starter_left.png");
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    #lechic h3.starter::after {
+        content: url("../images/menu2_starter_right.png");
+        position: absolute;
+        right: -10px;
+        top: 4px;
+    }
+    #lechic h3.main_course::before {
+        content: url("../images/menu2_main_left.png");
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    #lechic h3.main_course::after {
+        content: url("../images/menu2_main_right.png");
+        position: absolute;
+        right: -10px;
+        top: 4px;
+    }
+    #lechic h3.dessert::before {
+        content: url("../images/menu2_dessert_left.png");
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    #lechic h3.dessert::after {
+        content: url("../images/menu2_dessert_right.png");
+        position: absolute;
+        right: -10px;
+        top: 4px;
+    }
+
+    /* UNDERLINE WHEN MOUSE HOVER */
+    #lechic .starter h3 span::before{
+        background-color: #C67412;
+    }
+    #lechic .main_course h3 span::before{
+        background-color: #A56799;
+    }
+    #lechic .dessert h3 span::before{
+        background-color: #6E4CCC;
+    }
+/* MENU LE DELICE*/
+    #ledelice.container{
+        max-width: 680px;
+    }
+    #ledelice div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #ledelice div p {
+        margin-left: 50px;
+    }
+    #ledelice div .price {
+        margin-right: 50px;
+    }
+    /* SIDELINE */
+    #ledelice h3.starter::before {
+        content: url("../images/menu3_starter_left.png");
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    #ledelice h3.starter::after {
+        content: url("../images/menu3_starter_right.png");
+        position: absolute;
+        right: -10px;
+        top: 4px;
+    }
+    #ledelice h3.main_course::before {
+        content: url("../images/menu3_main_left.png");
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    #ledelice h3.main_course::after {
+        content: url("../images/menu3_main_right.png");
+        position: absolute;
+        right: -10px;
+        top: 4px;
+    }
+    #ledelice h3.dessert::before {
+        content: url("../images/menu3_dessert_left.png");
+        position: absolute;
+        left: -10px;
+        top: 4px;
+    }
+    #ledelice h3.dessert::after {
+        content: url("../images/menu3_dessert_right.png");
+        position: absolute;
+        right: -10px;
+        top: 4px;
+    }
+    /* UNDERLINE WHEN MOUSE HOVER */
+    #ledelice .starter h3 span::before{
+        background-color: #0526BF;
+    }
+    
+    #ledelice .main_course h3 span::before{
+        background-color: #1371E5;
+    }
+    
+    #ledelice .dessert h3 span::before{
+        background-color: #3198E5;
+    }
+    /* MENU LA PALETTE*/
+    #lapalette.container{
+        max-width: 720px;
+        
+    }
+    #lapalette div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #lapalette div p {
+        margin-left: 50px
+    }
+    #lapalette div .price {
+        margin-right: 50px;
+    }
+    /* SIDELINE */
+    #lapalette h3::before {
+        content: url("../images/menu4_left.png");
+        position: absolute;
+        left: 5px;
+        top: 4px;
+    }
+    #lapalette h3::after {
+        content: url("../images/menu4_right.png");
+        position: absolute;
+        right: 5px;
+        top: 4px;
+    }
+    /* UNDERLINE WHEN MOUSE HOVER */
+    #lapalette h3 span::before {
+        background: linear-gradient(to right, #4EA043, #92D968, #BEFF7F, #92D968, #4EA043);
+    }
+        /* UNDERLINE WHEN MOUSE HOVER */
+    section h3 span {
+        display: inline-block;
+        position: relative;
+        padding: 0 10px 10px;
+    }
+    section h3 span::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.5s ease-in;
+    }
+    section h3 span:hover::before {
+        width: 100%;
+    }
+}
+
